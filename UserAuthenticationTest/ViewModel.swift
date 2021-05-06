@@ -9,9 +9,11 @@ import Foundation
 
 class ViewModel: ObservableObject {
     @Published var loggedIn: Bool = false
+    @Published var loginButtonText = "Sign In With Firebase"
     
     public func login(_ username: String, password: String, remember: Bool) {
         // TODO: Add login with Firebase
+        print("Login with firebase")
     }
     
     public func loginWithGoogle(_ remember: Bool) {
